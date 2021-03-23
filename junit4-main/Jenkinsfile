@@ -1,9 +1,11 @@
 pipeline {
+    agent{
     stages {
         stage('Build') { 
             steps {
                 sh 'mvn -B -junit4-main clean package' 
             }
+        }
         }
     }
 }
