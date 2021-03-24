@@ -1,5 +1,5 @@
 pipeline {
-    agent {
+    agent any{
         stage('first'){
             Steps{
                 echo "navneet"
