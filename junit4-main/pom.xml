@@ -93,7 +93,7 @@
     </distributionManagement>
 
     <properties>
-        <jdkVersion>1.11</jdkVersion>
+        <jdkVersion>11.0.10</jdkVersion>
         <surefireVersion>2.19.1</surefireVersion>
         <hamcrestVersion>1.3</hamcrestVersion>
         <enforcerPluginVersion>1.4</enforcerPluginVersion>
