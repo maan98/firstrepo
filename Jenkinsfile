@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage("CheckOut") {
             steps{
-             checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maan98/my-app.git']]])
+             checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maan98/firstrepo.git']]])
             }
         }
          stage('Test') {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Maven Build") {
             steps {
-                sh 'mvn clean install -f my-app/pom.xml'
+                sh 'mvn clean install -f junit4-main/pom.xml'
             }
         }
         stage('Deploy') {
