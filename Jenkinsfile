@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Maven Build") {
             steps {
-                sh 'mvn clean install -f junit4-main/pom.xml'
+                sh 'mvn clean'
             }
         }
         stage('Deploy') {
